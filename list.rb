@@ -29,11 +29,20 @@ def separator(charac)
     puts charac * 80
 end
 
-list = create_list();
-list['items'].push(add_list_item())
-list['items'].push(add_list_item())
-list['items'].push(add_list_item())
-list['items'].push(add_list_item())
-list['items'].push(add_list_item())
+def add_to_list
+    list = create_list();
+    loop do
+        puts "Do you want to continue adding(y/n)? "
+        response = gets.chomp;
+        if response == 'n'
+            print_list(list)
+            break
+        elsif
+            list['items'].push(add_list_item)
+        end
+    end
+end
 
-print_list(list)
+
+
+add_to_list
