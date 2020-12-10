@@ -32,7 +32,7 @@ end
 def add_to_list
     list = create_list();
     loop do
-        puts "Do you want to continue adding(y/n)? "
+        puts "Do you want to continue adding to the list (y/n)? "
         response = gets.chomp;
         if response == 'n'
             print_list(list)
